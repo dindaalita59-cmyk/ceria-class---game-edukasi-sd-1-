@@ -1,0 +1,6 @@
+{
+  "name": "CERIA CLASS — Game Edukasi SD",
+  "description": "Aplikasi game edukasi interaktif ramah anak untuk siswa kelas rendah (1–3 SD) di SDN 32 Rantau Bayur karya Dinda Noer Alita, S.Pd.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

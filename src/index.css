@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-display {
+    font-family: 'Fredoka', cursive, sans-serif;
+  }
+}
+
+/* Playful multi-color background pattern */
+.ceria-bg-rainbow {
+  background-color: #fafbfc;
+  background-image: 
+    radial-gradient(at 10% 10%, rgba(254, 215, 170, 0.35) 0px, transparent 50%),
+    radial-gradient(at 90% 15%, rgba(186, 230, 253, 0.45) 0px, transparent 50%),
+    radial-gradient(at 20% 80%, rgba(167, 243, 208, 0.35) 0px, transparent 50%),
+    radial-gradient(at 85% 85%, rgba(233, 213, 255, 0.4) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(254, 205, 211, 0.25) 0px, transparent 50%);
+}
+
+@keyframes float-subtle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-float {
+  animation: float-subtle 3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
